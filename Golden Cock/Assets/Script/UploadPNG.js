@@ -20,6 +20,7 @@ function UploadPNG() {
 	// Upload to a cgi script
 	var w = WWW("http://moft.xzn.ir/test.php", form);
 	yield w;
+	print(w.text);
 	if (w.error != null){
 		print(w.error);
 		Application.ExternalCall( "debug", w.error);
