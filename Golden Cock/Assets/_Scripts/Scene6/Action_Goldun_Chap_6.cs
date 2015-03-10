@@ -16,7 +16,7 @@ public class Action_Goldun_Chap_6 : iActive_Action {
 	
 	public override IEnumerator Play_Animation ()
 	{
-		transform.GetComponent<Animator> ().SetTrigger ("");
+		transform.GetComponent<Animator> ().SetTrigger ("Action");
 		yield return new WaitForSeconds (0);
 	}
 	
