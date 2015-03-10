@@ -11,18 +11,11 @@ public class SimpleObject2 : iActive_Action
 		public AudioClip audio;
 	}
 
-	public System.Collections.Generic.List<Play_State> a = new System.Collections.Generic.List<Play_State> ();
-
 	void Start ()
 	{
 	}
 
 	void Update ()
 	{
-	}
-
-	public override void Action ()
-	{
-
 	}
 }
