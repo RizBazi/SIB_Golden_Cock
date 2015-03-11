@@ -40,7 +40,7 @@ public class Input_Manager : MonoBehaviour
 		Vector3 vector3 = Camera.main.ScreenToWorldPoint (position);
 		Vector2 vector2 = new Vector2 (vector3.x, vector3.y);
 		Collider2D hit = Physics2D.OverlapPoint (vector2);
-		if(hit!=null)
+		if(hit!=null && hit.GetComponent<iActive_Action>())
 		{
 			hit.GetComponent<iActive_Action>().Action();
 		}

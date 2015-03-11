@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Action_Cock_1 : iActive_Action {
@@ -8,13 +8,13 @@ public class Action_Cock_1 : iActive_Action {
 	
 	public override void Action ()
 	{
-		if(Can_Access)
-		{
-			if(Have_Animation)
-				StartCoroutine(Play_Animation());
-			if(Have_Audio)
-				StartCoroutine(Play_Audio());
-		}
+//		if(Can_Access)
+//		{
+//			if(Have_Animation)
+//				StartCoroutine(Play_Animation());
+//			if(Have_Audio)
+//				StartCoroutine(Play_Audio());
+//		}
 	}
 	
 	public override IEnumerator Play_Animation ()
@@ -27,6 +27,5 @@ public class Action_Cock_1 : iActive_Action {
 	public override IEnumerator Play_Audio ()
 	{
 		yield return new WaitForSeconds (0);
-		print ("Play_Audio");
 	}
 }
